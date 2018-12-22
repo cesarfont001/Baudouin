@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="labelError" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Button layoutX="217.0" layoutY="273.0" mnemonicParsing="false" onAction="#Login" prefHeight="39.0" prefWidth="138.0" text="S'identifier">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfPseudo" layoutX="161.0" layoutY="124.0" prefHeight="25.0" prefWidth="250.0" promptText="Pseudo" />
+      <PasswordField fx:id="tfPassword" layoutX="161.0" layoutY="179.0" prefHeight="25.0" prefWidth="250.0" promptText="Mot de passe" />
+      <Label layoutX="48.0" layoutY="179.0" prefHeight="25.0" prefWidth="113.0" text="Mot de passe :">
+         <font>
+            <Font name="Cambria Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="124.0" prefHeight="25.0" prefWidth="113.0" text="       Pseudo :">
+         <font>
+            <Font name="Cambria Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="39.0" prefHeight="47.0" prefWidth="379.0" text="Connecte-toi Baudouin !" textAlignment="CENTER" textFill="#454572" underline="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab" layoutX="158.0" layoutY="219.0" prefHeight="31.0" prefWidth="256.0" textFill="#f50202" AnchorPane.topAnchor="219.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

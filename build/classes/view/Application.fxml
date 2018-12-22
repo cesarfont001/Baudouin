@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2f4f4f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="34.0" layoutY="26.0" prefHeight="100.0" prefWidth="712.0">
+         <children>
+            <ImageView blendMode="ADD" fitHeight="150.0" fitWidth="200.0" focusTraversable="true" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../29595460_821226898061212_3689063359418669063_n.jpg" />
+               </image>
+            </ImageView>
+            <Label prefHeight="164.0" prefWidth="563.0" text="     Carton Baudouin" textAlignment="CENTER">
+               <font>
+                  <Font name="Eras Demi ITC" size="51.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="34.0" layoutY="197.0" prefHeight="21.0" prefWidth="178.0" text="Liste des comptes :" textFill="SILVER">
+         <font>
+            <Font name="Century" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="536.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="237.0" text="Ajouter un Compte">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView layoutX="34.0" layoutY="218.0" prefHeight="308.0" prefWidth="237.0" />
+      <TableView layoutX="382.0" layoutY="218.0" prefHeight="200.0" prefWidth="321.0">
+        <columns>
+          <TableColumn prefWidth="245.0" text="Cartons" />
+          <TableColumn prefWidth="75.0" text="Somme" />
+        </columns>
+      </TableView>
+      <Label layoutX="382.0" layoutY="197.0" prefHeight="21.0" prefWidth="178.0" text="Liste des cartons :" textFill="SILVER">
+         <font>
+            <Font name="Century" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="382.0" layoutY="437.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="130.0" text="Ajouter Carton">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="573.0" layoutY="437.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="130.0" text="Supprimer Carton">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <HBox layoutX="382.0" layoutY="499.0" prefHeight="74.0" prefWidth="340.0" style="-fx-border-width: 2px; -fx-border-color: grey; -fx-border-radius: 3px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="90.0" text="Total :" textFill="SILVER">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="79.0" prefWidth="63.0" style="-fx-border-style: 2px;" text="prix" textFill="SILVER">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="79.0" prefWidth="198.0" text="Supprimer / Régler ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="MOVE" />
+   </cursor>
+</AnchorPane>
