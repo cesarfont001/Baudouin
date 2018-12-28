@@ -19,10 +19,13 @@ import javafx.stage.Stage;
  *
  * @author Fontaine César
  */
-public class MainController {
+public class LoginController {
 
     @FXML
     private Label lab;
+    
+    @FXML
+    private Label lab1;
 
     @FXML
     private TextField tfPseudo;
@@ -32,11 +35,12 @@ public class MainController {
 
     public void Login(ActionEvent e) throws IOException {
         if (tfPseudo.getText().equals("Cafett") && tfPassword.getText().equals("Bo1951")) {
-            lab.setText("Authentification réussie");
+            lab1.setText("Authentification réussie");
             Stage ps = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource("/view/Application.fxml"));
             Scene scene = new Scene(root, 800, 600);
             ps.setScene(scene);
+            ps.setResizable(false);
             ps.show();
         } else {
 

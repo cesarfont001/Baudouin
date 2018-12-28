@@ -5,8 +5,6 @@
  */
 package main;
 
-import java.io.IOException;
-import java.net.URL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -24,6 +22,7 @@ public class main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
         Scene scene = new Scene(root, 600, 400);
         ps.setScene(scene);
+        ps.setResizable(false);
         ps.show();
     }
 
@@ -31,8 +30,6 @@ public class main extends Application {
         launch(args);
     }
 
-    private Parent FXMLLoader(URL resource) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
 }
